@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { replace } from 'grotto';
+import {replace} from 'grotto'
 
 export function engine(filePath: string, options: object, callback: (err: any, render?: string | Buffer) => void): void {
     fs.readFile(filePath, (err, content) => {
